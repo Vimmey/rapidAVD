@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>RapidAVD - Audio/Video Download </title>
+
+    <link href="assets/css/main_css.css" rel="stylesheet">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/hover.zoom.js"></script>
+    <script src="assets/js/hover.zoom.conf.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">RapidAVD</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="index.html">Login</a></li>
+        <li><a href="signup.html">Signup</a></li>           
+        <li><a href="about.html">About</a></li>  
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div><!--/.nav-collapse -->
+</div>
+</div>
+<div id="ww">
+    <div class="container">
+
+
+      <body>
+
+          <div style="background-color:white;color:black;padding:20px;border: 15px solid #e67e22">
+
+             <h4 style="color:#e67e22;"> POST : <span style="color:black;">http://<username>:<auth-token>@vimmey.com/rapidavd/getvideo
+             </span><br>
+             Host: <span style="color:black;">www.vimmey.com <br></span>
+             Content-Type: <span style="color:black;">application/json<br></span>
+             Accept: <span style="color:black;">application/json </h4><br>
+<!--        
+<
+-->
+<div id="ww">
+    <div class="container">
+
+
+      <body>
+        <p><h4 style="color:#e67e22">Request Format : </h4><br>
+
+
+            <h5> { <br>
+               &nbsp&nbsp&nbsp&nbsp&nbsp "url":"https://www.youtube.com/watch?v=1qQaWviQ9gQ"<br>
+
+           } </h5><br>
+
+
+
+           <h4 style="color:#e67e22"> Response Format : </h4><br>
+
+           <h5>  { <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp "requestId": "56534", <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp "requestType": "audio|video" , <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp "url": "https://www.youtube.com/watch?v=1qQaWviQ9gQ", <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp "downloadLink": "http://www.vimmey.com/rapidavd/downloads/QaWviQ9gQ.mp4" <br>
+
+        } </h5> <br></p>
+    </div>
+
+</div><!-- /col-lg-8 -->
+</div> <!-- /container -->
+</div><!-- /ww -->
+
+<div id="ww">
+    <div class="container">
+
+
+      <body>
+        <div style="background-color:white;color:black;padding:20px;border: 15px solid #e67e22">
+
+            <h4 style="color:#e67e22;"> POST : <span style="color:black;">http://<username>:<auth-token>@vimmey.com/rapidavd/getaudio
+
+            </span><br>
+            Host: <span style="color:black;">www.vimmey.com <br></span>
+            Content-Type: <span style="color:black;">application/json<br></span>
+            Accept: <span style="color:black;">application/json </h4><br>
+<!--        
+<
+-->
+<div id="ww">
+    <div class="container">
+
+
+      <body>
+        <p><h4 style="color:#e67e22">Request Format : </h4><br>
+
+
+            <h5> { <br>
+               &nbsp&nbsp&nbsp&nbsp&nbsp "url":"https://www.youtube.com/watch?v=1qQaWviQ9gQ"<br>
+
+           } </h5><br>
+
+
+
+           <h4 style="color:#e67e22"> Response Format : </h4><br>
+
+           <h5>  { <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp "requestId": "56534", <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp "requestType": "audio|video" , <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp "url": "https://www.youtube.com/watch?v=1qQaWviQ9gQ", <br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp "downloadLink": "http://www.vimmey.com/rapidavd/downloads/QaWviQ9gQ.mp3" <br>
+
+        } </h5> <br></p>
+    </div>
+
+</div><!-- /col-lg-8 -->
+</div> <!-- /container -->
+</div><!-- /ww -->
+
+
+
+<div id="ww">
+    <div class="container">
+
+
+      <body>
+        <div style="background-color:white;color:black;padding:20px;border: 15px solid #e67e22">
+
+            <h4 style="color:#e67e22;"> POST : <span style="color:black;">http://<username>:<auth-token>@vimmey.com/rapidavd/getinfo
+
+            </span><br>
+            Host: <span style="color:black;">www.vimmey.com <br></span>
+            Content-Type: <span style="color:black;">application/json<br></span>
+            Accept: <span style="color:black;">application/json </h4><br>
+<!--        
+<
+-->
+<p><h4 style="color:#e67e22">Request Format : </h4><br>
+
+
+    <h5> { <br>
+       &nbsp&nbsp&nbsp&nbsp&nbsp "requestId":"56534" <br>
+
+   } </h5><br>
+
+
+
+   <h4 style="color:#e67e22"> Response Format : </h4><br>
+
+   <h5>  { <br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp "requestId": "56534", <br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp "requestType": "audio|video" , <br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp "url": "https://www.youtube.com/watch?v=1qQaWviQ9gQ", <br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp "downloadLink": "http://www.vimmey.com/rapidavd/downloads/QaWviQ9gQ.mp3" <br>
+
+} </h5> <br></p>
+</div>
+
+</div><!-- /col-lg-8 -->
+</div> <!-- /container -->
+</div><!-- /ww -->
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>Designed By</h4>
+                <p>Vimmey Chopra <br> Bangalore , Karnataka
+                </p>
+            </div><!-- /col-lg-4 -->
+
+            <div class="col-lg-4">
+                <h4>My Links</h4>
+                <p>
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <img src="img/facebook.png" height="40px"><a href="https://www.facebook.com/vimmey.chopra/"></a>
+
+                                <img src="img/link.png" height="40px"><a href="https://in.linkedin.com/in/vimmeychopra"></a>
+
+
+                            </div>  
+                            <div class="col-md-4">
+                                <span class="copyright">Copyright &copy; Vimmey Chopra 2016</span>
+                            </div>              
+                        </div>
+                    </div>
+                </p>
+            </div><!-- /col-lg-4 -->
+
+
+
+        </div>
+
+    </div>
+</div>
+    <script src="assets/js/main.min.js"></script>
+
+</body>
+</html>
