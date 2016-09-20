@@ -17,7 +17,6 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/hover.zoom.js"></script>
     <script src="assets/js/hover.zoom.conf.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 </head>
@@ -36,10 +35,11 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="login.html">Login</a></li>        
+        <li><a href="login.html">Login</a></li>  
+
         <li><a href="signup.html">Signup</a></li> 
         <li><a href="index.html">Download</a></li>      
-                  
+
         <li><a href="about.html">About</a></li>  
         <li><a href="api.html">API's</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -56,16 +56,19 @@
            <div class="col-lg-8 col-lg-offset-2 centered">
 
             <!-- <h3 >Hi, Welcome to Secure Money Transfer!</h3>        <br><br>     -->
-            <input type="first_name" value="Enter URL" style ="color :#e59866;width:500px; font-size: 100%;height:50px;" class="b" onfocus="this.value==this.defaultValue?this.value='':null"><br><br> 
-            <input type="button" class="b" style ="color :#e59866;width:300px;text-weight:bold;height:70px; font-size: 200%;" value="Download Audio" />
-            <input type="button" class="b" style ="color :#e59866;width:300px;height:70px;text-weight:bold; font-size: 200%;" value="Download Video" />
-            <!-- <form action="?" method="POST">
-                  <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-                  <br/>
-                  <input type="submit" value="Submit">
-                </form>
- -->
-    
+            <h4  style="color: #e67e22;">Sign In to continue to RapidAVD</h4>
+            <form class="form" method="GET" action="./form_handler.php">
+                <fieldset>
+                    <input type="email" name="email" placeholder="Email" required style ="width: 220px;"/> <br /><br>
+                    <input type="password" name="password" placeholder="Password" required style ="width: 220px;"/><br><br>
+                </fieldset>
+
+                <input type="submit" name = "submit" value="Log In" class="b" style ="width: 220px; color :#e59866"></br><br>
+            </form>
+
+            <div class="utilities">
+                <input type="button" onclick="location.href='./forgot.html';" class="b" style ="color :#e59866" value="Forgot Password" />
+                <input type="button" onclick="location.href='./signup.html';" class="b" style ="color :#e59866" value="Sign Up" />
          </div>
 
      </div><!-- /col-lg-8 -->
