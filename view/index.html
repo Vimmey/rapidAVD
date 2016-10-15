@@ -57,15 +57,17 @@
            <center><img src="img/music.jpg" height=350px width="90%" alt="RapidAVD"><br><br></center>
            <div class="col-lg-8 col-lg-offset-2 centered">
 
-            <input type="first_name" value="Enter Youtube URL" style ="color :#e59866;width:700px; font-size: 130%;height:50px;" class="b" onfocus="this.value==this.defaultValue?this.value='':null"><br><br> 
+            <form action="./download.php" method = "GET">
+
+            <input type="text" placeholder="Enter Youtube URL" name="url" id = "url" style ="color :#e59866;width:700px; font-size: 130%;height:50px;" class="b" onfocus="this.value==this.defaultValue?this.value='':null" required ><br><br> 
 
             <center><div class="g-recaptcha" data-sitekey="6LfONwcUAAAAAEGE4HKIWVOspL8YQD7-FsLfhSD5"></div></center><br>
 
 
-            <input type="button" class="b" style ="color :#e59866;width:300px;text-weight:bold;height:60px; font-size: 200%;" value="Download Audio" /> 
-            <input type="button" class="b" style ="color :#e59866;width:300px;height:60px;text-weight:bold; font-size: 200%;margin-left:4em" value="Download Video" />
-            
- 
+            <input type="submit" class="b" style ="color :#e59866;width:300px;text-weight:bold;height:60px; font-size: 200%;" name = "type" value="audio" id = "download_audio" /> 
+            <input type="submit" class="b" style ="color :#e59866;width:300px;height:60px;text-weight:bold; font-size: 200%;margin-left:4em" name = "type" value="video" id = "download_video" />
+
+            </form>
     
          </div>
 
